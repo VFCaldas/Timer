@@ -10,14 +10,18 @@ class Timer {
   start = () => {
     this.tick;
     this.interval = setInterval(this.tick, 1000);
-
   }
   pause = () => {
     clearInterval(this.interval);
   }
   tick = () => {
-    const timeRemaining = +this.durationInput.value;
-    this.durationInput.value = timeRemaining - 1;
+    this.timeRemaining = this.timeRemaining - 1;
+  }
+  get timeRemaining() {
+    return +this.durationInput.value;
+  }
+  set timeRemaining(time) {
+    this.durationInput.value = time;
   }
 }
 const durationInput = document.querySelector('#duration');
