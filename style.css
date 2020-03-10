@@ -11,3 +11,43 @@ body {
     min-height: 100vh;
     align-items: center;
   }
+
+
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+   background: rgba(0,0,0,0);
+}
+
+.timer button {
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  background: rgba(0,0,0,0);
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.c-flex{
+  display: flex;
+}
